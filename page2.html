@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <title>Shop</title>
+    <style>
+    .flower-table {
+    background-color: #B76E79;
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse; 
+    font-family: "Poiret One", sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .flower-table th, .flower-table td {
+    border: 1px solid #FADBD8;
+    text-align: center;
+    padding: 12px;
+  }
+  .flower-table th {
+    background-color: #FDEDEC;
+    color: #B76E79;
+  }
+  .flower-table tr:hover {
+    background-color: #FCEAEF;
+  }
+  label {
+  font-family: "Poiret One", sans-serif;
+  font-size: 18px;
+  color: #B76E79;
+  display: block;
+  margin: 20px auto 10px;
+  text-align: center;
+}
+#flower-category {
+  display: block;
+  margin: 0 auto 30px;
+  padding: 10px;
+  border: 2px solid #FADBD8;
+  border-radius: 8px;
+  background-color: #FDEDEC;
+  font-family: "Poiret One", sans-serif;
+  font-size: 16px;
+  color: #B76E79;
+  cursor: pointer;
+  
+}
+
+
+ 
+
+    </style>
+</head>
+<body>
+    <h1>Belle Fleurs</h1>
+    <ul>
+        <li><a href="page1.html">Home</a></li>
+        <li><a href="page2.html">Shop</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="page3.html">Contact</a></li>
+    </ul> 
+    <label for = "flower-category">Filter by Flower Type</label>
+    <select id ="flower-category">
+        <option value="all">All</option>
+        <option value="roses">Roses</option>
+        <option value="tulips">Tulips</option>
+        <option value="sunflowers">Sunflowers</option>
+    </select>
+    <table class="flower-table">
+     <thead>
+        <tr>
+            <th>Flower</th>
+            <th>Type</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Rose</td>
+            <td>Bouquet</td>
+            <td>$25</td>
+        </tr>
+        <tr>
+            <td>Tulip</td>
+            <td>Single Stem</td>
+            <td>$5</td>
+        </tr>
+        <td>Sunflowers</td>
+        <td>Bundle</td>
+        <td>$18</td>
+    </tbody>
+    </table>
+  
+    
+</body>
+</html>
